@@ -3,7 +3,7 @@ Some function that makes it to donwload methylation data from GEO
 
 The functions so far:
 
-1. getGEOSampleSheet <- function(GSE_Nr, concise = T, onlyMeth = T)
+1. getGEOSampleSheet <- function(GSE_Nr, concise = T, onlyMeth = T) \n
   i. Downloads a GEO object containing all the study information
   ii. Selects columns of interest (e.g. title, geo_accession, platform_id, sample type, organism,..) [conise = T]
   iii. Select only sample sheets linked to methylation array [only Meth = T]
