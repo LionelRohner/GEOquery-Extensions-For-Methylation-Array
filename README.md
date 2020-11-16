@@ -6,7 +6,7 @@ Add some Info:
 
 
 
- Markup : 1. getGEOSampleSheet <- function(GSE_Nr, concise = T, onlyMeth = T)
+1. getGEOSampleSheet <- function(GSE_Nr, concise = T, onlyMeth = T)
               1. Downloads a GEO object containing all the study information
               2. Selects columns of interest (e.g. title, geo_accession, platform_id, sample type, organism,..) [conise = T]
               3. Select only sample sheets linked to methylation array [only Meth = T]
