@@ -94,8 +94,13 @@ getGEOSampleSheet <- function(GSE_Nr, concise = T, onlyMeth = T){
       return(NULL)
       
     }
+    # slice by meth array
+    sample_sheet <- sample_sheet[methArray,]
+    
     cat("\n")
     cat("Removing Temp Files... \n")
+    
+    
     
     # remove temporary files
     remove.files <- list.files("./GSE_temp/", pattern="[.]{1}gz|soft$")
