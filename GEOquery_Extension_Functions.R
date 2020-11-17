@@ -72,6 +72,11 @@ getGEOSampleSheet <- function(GSE_Nr, concise = T, onlyMeth = T){
     Array_EPIC <- grep("GPL21145|GPL23976",sample_sheet$platform_id)
     methArray <- c(Array_EPIC,Array_450K)
     
+    
+    # slice by meth array
+    sample_sheet_meth <- sample_sheet[methArray,]
+    
+    
     if (length(Array_450K > 0)){
       print("450K data found!")
     }
@@ -94,8 +99,7 @@ getGEOSampleSheet <- function(GSE_Nr, concise = T, onlyMeth = T){
       return(NULL)
       
     }
-    # slice by meth array
-    sample_sheet <- sample_sheet[methArray,]
+    
     
     cat("\n")
     cat("Removing Temp Files... \n")
@@ -108,7 +112,7 @@ getGEOSampleSheet <- function(GSE_Nr, concise = T, onlyMeth = T){
     do.call(file.remove,list(remove.files))
     setwd("../")
     
-    return(sample_sheet)
+    return(sample_sheet_meth)
     
   } else {
     
