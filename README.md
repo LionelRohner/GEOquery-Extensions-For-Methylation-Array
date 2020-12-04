@@ -1,5 +1,6 @@
 # GEOquery-Extensions-For-Methylation-Array
-Some function that makes it to donwload methylation data from GEO
+Some function that makes it a little easier to donwload methylation data from GEO.
+Based on GEOquery: http://bioconductor.org/packages/release/bioc/html/GEOquery.html
 
 The functions so far:
 
